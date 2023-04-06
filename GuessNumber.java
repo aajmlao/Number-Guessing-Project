@@ -14,11 +14,11 @@ public class GuessNumber {
         this.low = low;// pass low from outside to this class'slow
         random = new Random();//use a Random object
     }
-    //setter
+    
     public void higher(){
         low = getCurrentGuess() + 1; //if need to get a higher value, the lowest number needs to get higher. plus 1 because lowest number need to get least one higher than the previous lowest in order to make the function works. 
     }
-    //setter 
+     
     public void lower(){
         high = getCurrentGuess() - 1;//if need to get a lower value, the highest number needs to get lower. subtract 1 because highest number need to get least one lower than the previous highest in order to make the function works. 
     }
